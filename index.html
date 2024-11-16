@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Locais para conhecer!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\outras\icone_aviao.png" type="image/png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+<body>
+    <header>
+      <div class="apresentation">
+        <h1 class="text">
+          <span class="text-one">Lugares</span>
+          <span class="text-two">que eu gostaria de conhecer</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="img\outras\mapa_mundi_aviao.jpg" alt="Avião viajando entre continentes">
+    </div>
+
+    <div class="center-pag">
+      <div class="text">
+        <h1 class="title">
+          Embarque comigo em uma jornada pelos lugares que mais desejo conhecer!
+        </h1>
+        <p class="paragraf">
+          “De paisagens exóticas a cidades históricas, cada destino aqui é uma peça de um sonho de viagem. Clique em Saiba mais! em um dos cards ao lado para descobrir o que torna cada lugar tão especial e inspirador. Vamos explorar juntos essas maravilhas e sentir a magia de cada destino antes mesmo de partir?!”
+        </p>
+      </div>
+
+      <section>
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+  
+            <!-- Card Veneza -->
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="img\veneza\veneza.webp" alt="Veneza">
+                </div>
+  
+                <div class="country-city">
+                  <span class="country">Itália</span>
+                  <span class="city">Veneza</span>
+                </div>
+  
+                <div class="button">
+                  <a href="..\site\pag\veneza.html" class="button-link">
+                    <button class="saberMais"> Saber mais!</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Londres -->
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="img\londres\londres.jpg" alt="Londres">
+                </div>
+  
+                <div class="country-city">
+                  <span class="country">Reino Unido</span>
+                  <span class="city">Londres</span>
+                </div>
+  
+                <div class="button">
+                  <a href="..\site\pag\londres.html" class="button-link">
+                    <button class="saberMais"> Saber mais!</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Santorini -->
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="img\santorini\santorini.webp" alt="Santorini">
+                </div>
+  
+                <div class="country-city">
+                  <span class="country">Grécia</span>
+                  <span class="city">Santorini</span>
+                </div>
+  
+                <div class="button">
+                  <a href="..\site\pag\santorini.html" class="button-link">
+                    <button class="saberMais"> Saber mais!</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 - Todos os direitos reservados</p>
+      <nav>
+          <ul>
+              <li><a href="#">Termos de uso</a></li>
+              <li><a href="#">Política de privacidade</a></li>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Contato</a></li>
+          </ul>
+      </nav>
+    </footer>
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+</html>
